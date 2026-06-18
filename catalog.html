@@ -8,25 +8,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
       background: #faf8f5;
       color: #1e1e1e;
       padding: 40px 20px;
     }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* Шапка каталога */
+    .container { max-width: 1200px; margin: 0 auto; }
+    
     .catalog-header {
       display: flex;
       justify-content: space-between;
@@ -35,12 +25,7 @@
       flex-wrap: wrap;
       gap: 16px;
     }
-
-    .catalog-header h1 {
-      font-size: 32px;
-      font-weight: 700;
-    }
-
+    .catalog-header h1 { font-size: 32px; font-weight: 700; }
     .back-link {
       color: #b47c4e;
       text-decoration: none;
@@ -50,69 +35,48 @@
       border-radius: 40px;
       transition: 0.2s;
     }
+    .back-link:hover { background: #b47c4e; color: white; }
 
-    .back-link:hover {
-      background: #b47c4e;
-      color: white;
-    }
-
-    /* Сетка товаров (как на главной) */
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 28px;
     }
-
     .product-card {
       background: white;
       border-radius: 36px 16px 36px 16px;
-      padding: 24px 16px 20px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
+      padding: 20px 16px 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.02);
       transition: all 0.2s ease;
       border: 1px solid #ece6de;
       text-align: center;
     }
-
     .product-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 18px 36px rgba(0,0,0,0.04);
       border-color: #d9b382;
     }
-
     .product-img {
       background: #f2ece4;
       border-radius: 60px 20px 60px 20px;
-      padding: 12px 0;
+      padding: 8px;
       margin-bottom: 16px;
-      font-size: 56px;
-      line-height: 1.2;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
-
-    .product-card h3 {
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 6px;
+    .product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px 15px 50px 15px;
     }
-
-    .product-card .desc {
-      color: #4a4a4a;
-      font-size: 14px;
-      margin-bottom: 14px;
-    }
-
-    .product-card .price {
-      font-weight: 700;
-      font-size: 20px;
-      color: #1e1e1e;
-    }
-
-    .product-card .price small {
-      font-weight: 400;
-      font-size: 14px;
-      color: #777;
-      margin-left: 4px;
-    }
-
+    .product-card h3 { font-weight: 600; font-size: 20px; margin-bottom: 6px; }
+    .product-card .desc { color: #4a4a4a; font-size: 14px; margin-bottom: 14px; }
+    .product-card .price { font-weight: 700; font-size: 20px; color: #1e1e1e; }
+    .product-card .price small { font-weight: 400; font-size: 14px; color: #777; }
     .btn-small {
       margin-top: 14px;
       background: transparent;
@@ -125,83 +89,51 @@
       transition: 0.2s;
       background: white;
     }
-
-    .btn-small:hover {
-      background: #2b2b2b;
-      color: white;
-    }
+    .btn-small:hover { background: #2b2b2b; color: white; }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <!-- ШАПКА КАТАЛОГА -->
     <div class="catalog-header">
       <h1>🧦 Весь каталог</h1>
       <a href="index.html" class="back-link">← На главную</a>
     </div>
 
-    <!-- СЕТКА ТОВАРОВ -->
     <div class="product-grid">
 
-      <!-- Товар 1 -->
+      <!-- Товар 1 — картинка sock1.jpg -->
       <div class="product-card">
-        <div class="product-img">🧦</div>
+        <div class="product-img">
+          <img src="images/sock1.jpg" alt="Носки Классик">
+        </div>
         <h3>Классик</h3>
         <div class="desc">Хлопок, бежевый</div>
         <div class="price">890 <small>₽</small></div>
         <button class="btn-small">В корзину</button>
       </div>
 
-      <!-- Товар 2 -->
+      <!-- Товар 2 — картинка sock2.jpg -->
       <div class="product-card">
-        <div class="product-img">🧦</div>
+        <div class="product-img">
+          <img src="images/sock2.jpg" alt="Носки Полоска">
+        </div>
         <h3>Полоска</h3>
         <div class="desc">Меланж, серый</div>
         <div class="price">990 <small>₽</small></div>
         <button class="btn-small">В корзину</button>
       </div>
 
-      <!-- Товар 3 -->
+      <!-- Товар 3 — картинка sock3.jpg -->
       <div class="product-card">
-        <div class="product-img">🧦</div>
+        <div class="product-img">
+          <img src="images/sock3.jpg" alt="Носки Уют">
+        </div>
         <h3>Уют</h3>
         <div class="desc">Бамбук, зелёный</div>
         <div class="price">1 190 <small>₽</small></div>
         <button class="btn-small">В корзину</button>
       </div>
-
-      <!-- Товар 4 -->
-      <div class="product-card">
-        <div class="product-img">🧦</div>
-        <h3>Ночной</h3>
-        <div class="desc">Шерсть, тёмный</div>
-        <div class="price">1 390 <small>₽</small></div>
-        <button class="btn-small">В корзину</button>
-      </div>
-
-      <!-- 🔥 НОВЫЕ ТОВАРЫ (ДОБАВЬТЕ СВОИ) -->
-
-      <!-- Товар 5 -->
-      <div class="product-card">
-        <div class="product-img">🧦</div>
-        <h3>Спорт</h3>
-        <div class="desc">Хлопок, чёрный</div>
-        <div class="price">1 090 <small>₽</small></div>
-        <button class="btn-small">В корзину</button>
-      </div>
-
-      <!-- Товар 6 -->
-      <div class="product-card">
-        <div class="product-img">🧦</div>
-        <h3>Узор</h3>
-        <div class="desc">Шерсть, синий</div>
-        <div class="price">1 290 <small>₽</small></div>
-        <button class="btn-small">В корзину</button>
-      </div>
-
-    </div>
-    <!-- КОНЕЦ СЕТКИ ТОВАРОВ -->
 
   </div>
 </body>
