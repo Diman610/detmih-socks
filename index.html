@@ -1,15 +1,13 @@
-html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta name="yandex-verification" content="89768ba0b86be016" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="yandex-verification" content="89768ba0b86be016" />
   <title>Детмих Носков — бренд уютных носков</title>
- <meta name="description" content="Купить качественные и уютные носки в России. Детмих Носков — натуральные материалы, стильный дизайн. Доставка по всей России.">
+  <meta name="description" content="Купить качественные и уютные носки в России. Детмих Носков — натуральные материалы, стильный дизайн. Доставка по всей России.">
   <meta name="keywords" content="носки, купить носки, уютные носки, носки ручной работы, детмих, носки в подарок">
   <meta name="language" content="Russian">
-  <!-- Шрифты для стильного вида -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -33,7 +31,6 @@ html
       padding: 0 20px;
     }
 
-    /* Шапка */
     .header {
       padding: 28px 0 16px;
       border-bottom: 2px solid #e8e0d8;
@@ -112,7 +109,6 @@ html
       border-color: #b47c4e;
     }
 
-    /* Герой */
     .hero {
       padding: 56px 0 40px;
       display: flex;
@@ -202,7 +198,6 @@ html
       transform: rotate(0deg) scale(1.01);
     }
 
-    /* Секция "О нас" */
     .about {
       padding: 60px 0 40px;
       border-top: 2px solid #e8e0d8;
@@ -259,7 +254,6 @@ html
       font-size: 15px;
     }
 
-    /* Каталог / товары */
     .products {
       padding: 50px 0 20px;
     }
@@ -311,6 +305,17 @@ html
       margin-bottom: 16px;
       font-size: 56px;
       line-height: 1.2;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-img img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 40px 10px 40px 10px;
+      object-fit: cover;
     }
 
     .product-card h3 {
@@ -356,7 +361,6 @@ html
       color: white;
     }
 
-    /* Отзыв (блок) */
     .testimonial {
       background: #ffffff;
       border-radius: 60px 20px 60px 20px;
@@ -396,7 +400,6 @@ html
       color: #4d3e2e;
     }
 
-    /* Подвал / контакты */
     .footer {
       background: #1e1e1e;
       color: #e4ddd6;
@@ -459,7 +462,6 @@ html
       cursor: default;
     }
 
-    /* Адаптив */
     @media (max-width: 700px) {
       .header-inner {
         flex-direction: column;
@@ -487,7 +489,6 @@ html
 </head>
 <body>
 
-  <!-- Шапка -->
   <header class="header">
     <div class="container header-inner">
       <div class="logo">
@@ -504,7 +505,6 @@ html
   </header>
 
   <main>
-    <!-- Герой -->
     <section class="container hero">
       <div class="hero-text">
         <span class="badge">🔥 новая коллекция</span>
@@ -514,7 +514,7 @@ html
         <p>
           Уют, качество и характер в каждой паре. Детмих — это больше, чем просто носки.
         </p>
-        <button class="hero-btn">Выбрать пару</button>
+        <a href="catalog.html" class="hero-btn" style="display:inline-block; text-decoration:none;">Выбрать пару</a>
       </div>
       <div class="hero-image">
         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23e8ddd0'/%3E%3Ccircle cx='150' cy='130' r='50' fill='%23b47c4e' opacity='0.3'/%3E%3Ctext x='50' y='190' font-family='Inter' font-size='40' fill='%232b2b2b'%3E🧦%3C/text%3E%3Ctext x='70' y='250' font-family='Inter' font-size='28' fill='%232b2b2b' font-weight='700'%3EДетмих%3C/text%3E%3C/svg%3E"
@@ -522,7 +522,6 @@ html
       </div>
     </section>
 
-    <!-- О нас -->
     <section class="container about">
       <div class="about-grid">
         <div class="about-text">
@@ -546,35 +545,34 @@ html
       </div>
     </section>
 
-    <!-- Товары -->
     <section class="container products">
       <div class="section-title">
         <span></span> Хиты продаж
       </div>
       <div class="product-grid">
         <div class="product-card">
-          <div class="product-img">🧦</div>
+          <div class="product-img"><img src="sock1.jpg" alt="Классик"></div>
           <h3>Классик</h3>
           <div class="desc">Хлопок, бежевый</div>
           <div class="price">890 <small>₽</small></div>
           <button class="btn-small">В корзину</button>
         </div>
         <div class="product-card">
-          <div class="product-img">🧦</div>
+          <div class="product-img"><img src="sock2.jpg" alt="Полоска"></div>
           <h3>Полоска</h3>
           <div class="desc">Меланж, серый</div>
           <div class="price">990 <small>₽</small></div>
           <button class="btn-small">В корзину</button>
         </div>
         <div class="product-card">
-          <div class="product-img">🧦</div>
+          <div class="product-img"><img src="sock3.jpg" alt="Уют"></div>
           <h3>Уют</h3>
           <div class="desc">Бамбук, зелёный</div>
           <div class="price">1 190 <small>₽</small></div>
           <button class="btn-small">В корзину</button>
         </div>
         <div class="product-card">
-          <div class="product-img">🧦</div>
+          <div class="product-img"><img src="sock4.jpg" alt="Ночной"></div>
           <h3>Ночной</h3>
           <div class="desc">Шерсть, тёмный</div>
           <div class="price">1 390 <small>₽</small></div>
@@ -583,7 +581,6 @@ html
       </div>
     </section>
 
-    <!-- Отзыв -->
     <div class="container testimonial">
       <blockquote>
         Носки Детмих — это любовь с первой минуты. Мягкие, дышащие и такие стильные!
@@ -593,7 +590,6 @@ html
 
   </main>
 
-  <!-- Подвал -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
