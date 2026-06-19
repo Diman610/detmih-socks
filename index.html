@@ -494,9 +494,30 @@
   <header class="header">
     <div class="container header-inner">
       <div class="logo">
-        <span class="logo-icon">🧦</span>
-        Детмих
-      </div>
+  <div class="logo-icon">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Фон круга -->
+      <circle cx="50" cy="50" r="48" fill="url(#grad)" stroke="#b47c4e" stroke-width="2"/>
+      <!-- Носок -->
+      <path d="M35 65 L35 35 Q35 25 45 25 L55 25 Q65 25 65 35 L65 65 Q65 75 55 75 L45 75 Q35 75 35 65 Z" fill="white" stroke="#b47c4e" stroke-width="2"/>
+      <!-- Резинка носка -->
+      <rect x="38" y="28" width="24" height="12" rx="2" fill="#d9b382" stroke="#b47c4e" stroke-width="1.5"/>
+      <!-- Полоски на носке -->
+      <line x1="42" y1="45" x2="58" y2="45" stroke="#b47c4e" stroke-width="2" stroke-linecap="round"/>
+      <line x1="42" y1="52" x2="58" y2="52" stroke="#b47c4e" stroke-width="2" stroke-linecap="round"/>
+      <line x1="42" y1="59" x2="58" y2="59" stroke="#b47c4e" stroke-width="2" stroke-linecap="round"/>
+      <!-- Градиент -->
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#faf0e6"/>
+          <stop offset="100%" stop-color="#e8ddd0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <span class="logo-text">Детмих</span>
+  <span class="logo-slogan">Носков</span>
+</div>
       <nav class="nav">
         <a href="catalog.html">Каталог</a>
         <a href="about.html">О нас</a>
